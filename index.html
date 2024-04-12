@@ -67,12 +67,14 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>National Taiwan University<br><sup>2</sup>Nanjing University of Science and Technology<br><sup>3</sup>Google Research<br><sup>4</sup>University of California, Merced<br><sup>5</sup>Yonsei University<br><br>ECCV 2022</span>
+                    <span class="author-block"><sup>1</sup>National Taiwan University<br><sup>2</sup>Nanjing University of Science and Technology<br><sup>3</sup>Google Research<br><sup>4</sup>University of California, Merced<br><sup>5</sup>Yonsei University<br><br>Submitted to TCSVT</span>
                   </div>
+
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
+                         <!--
                       <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -81,7 +83,7 @@
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span>
+                    </span>-->
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
@@ -149,7 +151,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Most existing non-blind deblurring methods formulate the problem into a maximum-a-posteriori framework and address it by manually designing a variety of regularization terms and data terms of the latent clear images. However, explicitly designing these two terms is quite challenging, which usually leads to complex optimization problems. In this paper, we propose a Discriminative Shrinkage Deep Network for fast and accurate deblurring. Most existing methods use deep convolutional neural networks (CNNs), or radial basis functions only to learn the regularization term. In contrast, we formulate both the data and regularization terms while splitting the deconvolution model into data-related and regularization-related sub-problems. We explore the properties of the Maxout function and develop a deep CNN model with Maxout layers to learn discriminative shrinkage functions, which directly approximate the solutions of these two sub-problems. Moreover, we develop the Conjugate Gradient Network to restore the latent clear images effectively and efficiently, which plays a role but is better than the conventional fast-Fourier-transform-based or conjugate gradient method. Experimental results show that the proposed method performs favorably against the state-of-the-art methods regarding efficiency and accuracy.
           </p>
         </div>
       </div>
@@ -279,7 +281,14 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@inproceedings{kuo2022learning,
+        title={Learning discriminative shrinkage deep networks for image deconvolution},
+        author={Kuo, Pin-Hung and Pan, Jinshan and Chien, Shao-Yi and Yang, Ming-Hsuan},
+        booktitle={European Conference on Computer Vision},
+        pages={217--234},
+        year={2022},
+        organization={Springer}
+      }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
